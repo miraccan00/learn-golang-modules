@@ -1,15 +1,16 @@
-// main.go
 package main
 
 import (
 	"fmt"
 
-	"github.com/miraccan00/goodbye"
-	"github.com/miraccan00/hello"
+	"github.com/miraccan00/learn-golang-modules/goodbye"
+	"github.com/miraccan00/learn-golang-modules/greeting"
+	"github.com/miraccan00/learn-golang-modules/hello"
 )
 
 func main() {
-	result1, result2 := hello.Hello("Miracle"), goodbye.Goodbye("Miracle")
-	fmt.Println(result1)
-	fmt.Println(result2)
+	fmt.Println(hello.Hello("Miracle"))
+	fmt.Println(goodbye.Goodbye("Miracle"))
+	fmt.Println(greeting.Greet("Miracle", true))
+	fmt.Println(greeting.Greet("Miracle", false))
 }
